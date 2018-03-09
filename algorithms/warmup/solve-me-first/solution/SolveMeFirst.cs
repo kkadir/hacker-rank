@@ -2,11 +2,21 @@
 
 namespace HackerRank.Algorithms.Warmup
 {
-    class SolveMeFirst
+    public class SolveMeFirst
     {
-        static void Main(string[] args)
+        private static int Sum(int a, int b)
         {
-            Console.WriteLine("Hello World!");
+            return a + b;
+        }
+        
+        public static void Main(string[] args)
+        {
+            int firtsInput = Convert.ToInt32(Console.ReadLine());
+            int secondInput = Convert.ToInt32(Console.ReadLine());
+
+            int sum = Sum(firtsInput, secondInput);
+
+            Console.WriteLine(sum);
         }
     }
 }
